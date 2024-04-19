@@ -20,7 +20,7 @@ changelog = "https://github.com/psychopy/psychopy-legacy/blob/main/CHANGELOG.md"
 [project.optional-dependencies]
 # dependencies for using different movie stims
 movie2 = [
-  "openCV",
+  "opencv-python",
   "python-vlc",
 ]
 movie3 = [
