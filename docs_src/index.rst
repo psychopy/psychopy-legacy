@@ -1,5 +1,5 @@
 =======================================================
-Welcome to psychopy-plugin-template's documentation!
+Welcome to psychopy-legacy's documentation!
 =======================================================
 
 The `psychopy-legacy` plugin contains legacy stimuli and Components for PsychoPy.
