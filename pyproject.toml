@@ -18,17 +18,6 @@ homepage = "https://github.com/psychopy/psychopy-legacy"
 changelog = "https://github.com/psychopy/psychopy-legacy/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
-# dependencies for building the docs
-docs = [
-  "psychopy",
-  "sphinx",
-  "furo",
-]
-# dependencies for running the test suite
-tests = [
-  "psychopy @ git+https://github.com/psychopy/psychopy@release",
-  "pytest",
-]
 # dependencies for using different movie stims
 movie2 = [
   "openCV",
@@ -36,6 +25,20 @@ movie2 = [
 ]
 movie3 = [
   "moviepy",
+]
+# dependencies for building the docs
+docs = [
+  "psychopy",
+  "sphinx",
+  "furo",
+  "moviepy",
+  "openCV",
+  "python-vlc",
+]
+# dependencies for running the test suite
+tests = [
+  "psychopy @ git+https://github.com/psychopy/psychopy@release",
+  "pytest",
 ]
 
 
