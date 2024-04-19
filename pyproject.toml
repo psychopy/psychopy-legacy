@@ -21,8 +21,7 @@ changelog = "https://github.com/psychopy/psychopy-legacy/blob/main/CHANGELOG.md"
 # dependencies for using different movie stims
 movie2 = [
   "opencv-python",
-  "python-vlc == 3.0.11115; platform_system == \"Windows\"",
-  "python-vlc >= 3.0.12118; platform_system != \"Windows\"",
+  "python-vlc",
 ]
 movie3 = [
   "moviepy",
@@ -34,8 +33,7 @@ docs = [
   "furo",
   "moviepy",
   "opencv-python",
-  "python-vlc == 3.0.11115; platform_system == \"Windows\"",
-  "python-vlc >= 3.0.12118; platform_system != \"Windows\"",
+  "python-vlc",
 ]
 # dependencies for running the test suite
 tests = [
