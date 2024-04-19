@@ -39,6 +39,9 @@ docs = [
 tests = [
   "psychopy @ git+https://github.com/psychopy/psychopy@release",
   "pytest",
+  "moviepy",
+  "opencv-python",
+  "python-vlc",
 ]
 
 
