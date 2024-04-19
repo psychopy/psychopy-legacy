@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index &#8212; PsychoPy Example Plugin 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=536c50fe" />
+    <link rel="stylesheet" type="text/css" href="../_static/psychopy.css?v=b9f4e6dd" />
+    <script src="../_static/documentation_options.js?v=d20be8f5"></script>
+    <script src="../_static/doctools.js?v=b682be12"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script src="../_static/js/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="../search/" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4089651-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-4089651-2');
+    </script>
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.psychopy.org"]);
+      _paq.push(["setDomains", ["*.psychopy.org","*.discourse.psychopy.org"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.opensciencetools.org/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//analytics.opensciencetools.org/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+
+
+  </head><body>
+
+<!-- The social media icon bar -->
+<div class="social-bar">
+  <a href="" class="github">
+    <i class="fab fa-github"></i></a>
+</div>
+
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand small-logo" href="../">
+          <img src="../_static/Psychopy Plugin Header Small.png" alt="PsychoPy Logo">
+        </a>
+        <a class="navbar-brand large-logo" href="../">
+          <img src="../_static/Psychopy Plugin Header Large.png" alt="PsychoPy Logo">
+        </a>
+        <!-- <span class="navbar-text navbar-version pull-right"><b></b></span> -->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse w-100 pull-right">
+          <ul class="nav navbar-nav ml-auto">
+            <li><a href="../">Home</a></li>
+            <li><a href="../download/">Install</a></li>
+            
+            <li><a href="https://plugins.psychopy.org/directory.html" class="return-btn">plugins.psychopy.org</a></li>
+            
+              <!-- <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../">Documentation <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Added content for Builder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../builder/components/PatchComponent/">PatchComponent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builder/components/RatingScaleComponent/">RatingScaleComponent</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Added content for Coder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../coder/MovieStim2/">MovieStim2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coder/MovieStim3/">MovieStim3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coder/PatchStim/">PatchStim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coder/RatingScale/">RatingScale</a></li>
+</ul>
+</ul>
+</li> -->
+              
+            
+            <!--  -->
+            
+            
+          </ul>
+
+            <!-- 
+              
+<form class="navbar-form navbar-right" action="../search/" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+             -->
+
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 content">
+      
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#W"><strong>W</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.acceptResponse">acceptResponse() (psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.anchor">anchor (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.anchor">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.autoDraw">autoDraw (psychopy_legacy.visual.movie3.MovieStim3 attribute)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.autoDraw">(psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.autoDraw">(psychopy_legacy.visual.ratingscale.RatingScale attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.autoLog">autoLog (psychopy_legacy.visual.movie3.MovieStim3 attribute)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.autoLog">(psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.autoLog">(psychopy_legacy.visual.ratingscale.RatingScale attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.backColor">backColor (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.backColorSpace">backColorSpace (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.backgroundColor">backgroundColor (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.backRGB">backRGB (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.blendmode">blendmode (psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.borderColor">borderColor (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.borderColorSpace">borderColorSpace (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.borderRGB">borderRGB (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.borderWidth">borderWidth (psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.clearTextures">clearTextures() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.clearTextures">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.color">color (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.colorSpace">colorSpace (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.contains">contains() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.contains">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.contrast">contrast (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.depth">depth (psychopy_legacy.visual.movie3.MovieStim3 attribute)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.depth">(psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.doDragging">doDragging() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.draggable">draggable (psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.draw">draw() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.draw">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.draw">(psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.duration">duration (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.fillColor">fillColor (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.fillColorSpace">fillColorSpace (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.fillRGB">fillRGB (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.flip">flip (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.flip">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.flipHoriz">flipHoriz (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.flipHoriz">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.flipVert">flipVert (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.flipVert">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.fontColor">fontColor (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.foreColor">foreColor (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.foreColorSpace">foreColorSpace (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.foreRGB">foreRGB (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.frameInterval">frameInterval (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.get_borderPix">get_borderPix() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.get_borderPix">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getAnchor">getAnchor() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getAnchor">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getAutoDraw">getAutoDraw() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getAutoDraw">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.getAutoDraw">(psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getAutoLog">getAutoLog() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getAutoLog">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.getAutoLog">(psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getBackColor">getBackColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getBackColorSpace">getBackColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getBackgroundColor">getBackgroundColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getBackRGB">getBackRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getBlendmode">getBlendmode() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getBorderColor">getBorderColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getBorderColorSpace">getBorderColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getBorderRGB">getBorderRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getBorderWidth">getBorderWidth() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getColor">getColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getColorSpace">getColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getContrast">getContrast() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getCurrentFrameTime">getCurrentFrameTime() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getDepth">getDepth() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getDepth">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getDraggable">getDraggable() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getDuration">getDuration() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getFillColor">getFillColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getFillColorSpace">getFillColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getFillRGB">getFillRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getFlip">getFlip() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getFlip">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getFlipHoriz">getFlipHoriz() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getFlipHoriz">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getFlipVert">getFlipVert() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getFlipVert">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getFontColor">getFontColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getForeColor">getForeColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getForeColorSpace">getForeColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getForeRGB">getForeRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getFPS">getFPS() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getFrameInterval">getFrameInterval() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getHeight">getHeight() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getHeight">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.getHistory">getHistory() (psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getInterpolate">getInterpolate() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getInterpolate">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getLineColor">getLineColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getLineColorSpace">getLineColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getLineRGB">getLineRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getLineWidth">getLineWidth() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getMask">getMask() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getMask">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getMaskParams">getMaskParams() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getMaskParams">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getName">getName() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getName">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.getName">(psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getOpacity">getOpacity() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getOpacity">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getOri">getOri() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getOri">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getPhase">getPhase() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getPos">getPos() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getPos">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.getRating">getRating() (psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getRGB">getRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.getRT">getRT() (psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getSf">getSf() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getSize">getSize() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getSize">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getTex">getTex() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getTexRes">getTexRes() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getTexRes">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getUnits">getUnits() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getUnits">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getVertices">getVertices() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getVertices">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getVerticesPix">getVerticesPix() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getVerticesPix">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getWidth">getWidth() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getWidth">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getWin">getWin() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.getWin">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.height">height (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.height">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.interpolate">interpolate (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.interpolate">(psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.isDragging">isDragging (psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.lineColor">lineColor (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.lineColorSpace">lineColorSpace (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.lineRGB">lineRGB (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.lineWidth">lineWidth (psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.loadMovie">loadMovie() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.mask">mask (psychopy_legacy.visual.movie3.MovieStim3 attribute)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.mask">(psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.maskParams">maskParams (psychopy_legacy.visual.movie3.MovieStim3 attribute)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.maskParams">(psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3">MovieStim3 (class in psychopy_legacy.visual.movie3)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.name">name (psychopy_legacy.visual.movie3.MovieStim3 attribute)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.name">(psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.name">(psychopy_legacy.visual.ratingscale.RatingScale attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.opacity">opacity (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.opacity">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.ori">ori (psychopy_legacy.visual.movie3.MovieStim3 attribute)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.ori">(psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.overlaps">overlaps() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.overlaps">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim">PatchStim (class in psychopy_legacy.visual.patch)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.pause">pause() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.phase">phase (psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.play">play() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.pos">pos (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.pos">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale">RatingScale (class in psychopy_legacy.visual.ratingscale)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.reset">reset() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.reset">(psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.RGB">RGB (psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.seek">seek() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setAnchor">setAnchor() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setAnchor">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setAutoDraw">setAutoDraw() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setAutoDraw">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.setAutoDraw">(psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setAutoLog">setAutoLog() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setAutoLog">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.setAutoLog">(psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setBackColor">setBackColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setBackColorSpace">setBackColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setBackgroundColor">setBackgroundColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setBackRGB">setBackRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setBlendmode">setBlendmode() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setBorderColor">setBorderColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setBorderColorSpace">setBorderColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setBorderRGB">setBorderRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setBorderWidth">setBorderWidth() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setColor">setColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setColorSpace">setColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setContrast">setContrast() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setDepth">setDepth() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setDepth">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.setDescription">setDescription() (psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setDKL">setDKL() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setDraggable">setDraggable() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setFillColor">setFillColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setFillColorSpace">setFillColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setFillRGB">setFillRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setFlip">setFlip() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setFlip">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setFlipHoriz">setFlipHoriz() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setFlipHoriz">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setFlipVert">setFlipVert() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setFlipVert">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.setFlipVert">(psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setFontColor">setFontColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setForeColor">setForeColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setForeColorSpace">setForeColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setForeRGB">setForeRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setHeight">setHeight() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setHeight">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setInterpolate">setInterpolate() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setInterpolate">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setLineColor">setLineColor() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setLineColorSpace">setLineColorSpace() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setLineRGB">setLineRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setLineWidth">setLineWidth() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setLMS">setLMS() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.setMarkerPos">setMarkerPos() (psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setMask">setMask() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setMask">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setMaskParams">setMaskParams() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setMaskParams">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setMovie">setMovie() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setName">setName() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setName">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+        <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.setName">(psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setOpacity">setOpacity() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setOpacity">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setOri">setOri() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setOri">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setPhase">setPhase() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setPos">setPos() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setPos">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setRGB">setRGB() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setSF">setSF() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setSf">setSf() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setSize">setSize() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setSize">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setTex">setTex() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setTexRes">setTexRes() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setTexRes">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setUnits">setUnits() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setUnits">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setVertices">setVertices() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setVertices">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setVolume">setVolume() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setWidth">setWidth() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setWidth">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setWin">setWin() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.setWin">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/RatingScale/#psychopy_legacy.visual.ratingscale.RatingScale.setYPos">setYPos() (psychopy_legacy.visual.ratingscale.RatingScale method)</a>
+</li>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.sf">sf (psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.size">size (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.size">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.stop">stop() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.tex">tex (psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.texRes">texRes (psychopy_legacy.visual.movie3.MovieStim3 attribute)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.texRes">(psychopy_legacy.visual.patch.PatchStim attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.units">units (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.units">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.updateColors">updateColors() (psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.updateOpacity">updateOpacity() (psychopy_legacy.visual.movie3.MovieStim3 method)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.updateOpacity">(psychopy_legacy.visual.patch.PatchStim method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.vertices">vertices (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.vertices">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.verticesPix">verticesPix (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.verticesPix">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.width">width (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.width">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.win">win (psychopy_legacy.visual.movie3.MovieStim3 property)</a>
+
+      <ul>
+        <li><a href="../coder/PatchStim/#psychopy_legacy.visual.patch.PatchStim.win">(psychopy_legacy.visual.patch.PatchStim property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+
+
+      <br/><a href="#" class="pull-right">Back to top</a>
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <span class="pull-right">
+      
+        
+      <br/>
+
+          &copy; 2002-2018 <a href="https://www.peirce.org.uk/">Jonathan Peirce</a><br/>
+          &copy; 2019 <a href="https://opensciencetools.org/">Open Science Tools Ltd.</a><br/><br/>
+        PsychoPy<sup>®</sup> and Pavlovia<sup>®</sup> are registered trademarks of Open Science Tools Ltd.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br/><br/>
+    </span>
+
+    <a href="http://www.nottingham.ac.uk/"><img src="../_static/Nottingham Supported.png", alt="Uni of Nottingham" width=250></a>
+  </div>
+
+</footer>
+  </body>
+</html>

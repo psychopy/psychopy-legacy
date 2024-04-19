@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>psychopy_legacy.visual.movie3 &#8212; PsychoPy Example Plugin 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=536c50fe" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/psychopy.css?v=b9f4e6dd" />
+    <script src="../../../../_static/documentation_options.js?v=d20be8f5"></script>
+    <script src="../../../../_static/doctools.js?v=b682be12"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/js/jquery-1.11.0.min.js"></script>
+    <script src="../../../../_static/js/jquery-fix.js"></script>
+    <script src="../../../../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../search/" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4089651-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-4089651-2');
+    </script>
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.psychopy.org"]);
+      _paq.push(["setDomains", ["*.psychopy.org","*.discourse.psychopy.org"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.opensciencetools.org/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//analytics.opensciencetools.org/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+
+
+  </head><body>
+
+<!-- The social media icon bar -->
+<div class="social-bar">
+  <a href="" class="github">
+    <i class="fab fa-github"></i></a>
+</div>
+
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand small-logo" href="../../../../">
+          <img src="../../../../_static/Psychopy Plugin Header Small.png" alt="PsychoPy Logo">
+        </a>
+        <a class="navbar-brand large-logo" href="../../../../">
+          <img src="../../../../_static/Psychopy Plugin Header Large.png" alt="PsychoPy Logo">
+        </a>
+        <!-- <span class="navbar-text navbar-version pull-right"><b></b></span> -->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse w-100 pull-right">
+          <ul class="nav navbar-nav ml-auto">
+            <li><a href="../../../../">Home</a></li>
+            <li><a href="../../../../download/">Install</a></li>
+            
+            <li><a href="https://plugins.psychopy.org/directory.html" class="return-btn">plugins.psychopy.org</a></li>
+            
+              <!-- <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../../">Documentation <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Added content for Builder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../builder/components/PatchComponent/">PatchComponent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../builder/components/RatingScaleComponent/">RatingScaleComponent</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Added content for Coder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../coder/MovieStim2/">MovieStim2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../coder/MovieStim3/">MovieStim3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../coder/PatchStim/">PatchStim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../coder/RatingScale/">RatingScale</a></li>
+</ul>
+</ul>
+</li> -->
+              
+            
+            <!--  -->
+            
+            
+          </ul>
+
+            <!-- 
+              
+<form class="navbar-form navbar-right" action="../../../../search/" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+             -->
+
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 content">
+      
+  <h1>Source code for psychopy_legacy.visual.movie3</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">A stimulus class for playing movies (mp4, divx, avi etc...) in PsychoPy.</span>
+<span class="sd">Demo using the experimental movie3 stim to play a video file. Path of video</span>
+<span class="sd">needs to updated to point to a video you have. movie2 does /not/ require</span>
+<span class="sd">avbin to be installed.</span>
+
+<span class="sd">Movie3 does require:</span>
+<span class="sd">~~~~~~~~~~~~~~~~~~~~~</span>
+
+<span class="sd">moviepy (which requires imageio, Decorator). These can be installed</span>
+<span class="sd">(including dependencies) on a standard Python install using</span>
+<span class="sd">`pip install moviepy`</span>
+<span class="sd">imageio will download further compiled libs (ffmpeg) as needed</span>
+
+<span class="sd">Current known issues:</span>
+<span class="sd">~~~~~~~~~~~~~~~~~~~~~~</span>
+
+<span class="sd">volume control not implemented</span>
+<span class="sd">movie is long then audio will be huge and currently the whole thing gets</span>
+<span class="sd">    loaded in one go. We should provide streaming audio from disk.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Part of the PsychoPy library</span>
+<span class="c1"># Copyright (C) 2002-2018 Jonathan Peirce (C) 2019-2024 Open Science Tools Ltd.</span>
+<span class="c1"># Distributed under the terms of the GNU General Public License (GPL).</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">reportNDroppedFrames</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">logging</span><span class="p">,</span> <span class="n">prefs</span>  <span class="c1"># adding prefs to be able to check sound lib -JK</span>
+<span class="kn">from</span> <span class="nn">psychopy.tools.arraytools</span> <span class="kn">import</span> <span class="n">val2array</span>
+<span class="kn">from</span> <span class="nn">psychopy.tools.attributetools</span> <span class="kn">import</span> <span class="n">logAttrib</span><span class="p">,</span> <span class="n">setAttribute</span>
+<span class="kn">from</span> <span class="nn">psychopy.tools.filetools</span> <span class="kn">import</span> <span class="n">pathToString</span>
+<span class="kn">from</span> <span class="nn">psychopy.visual.basevisual</span> <span class="kn">import</span> <span class="n">BaseVisualStim</span><span class="p">,</span> <span class="n">ContainerMixin</span><span class="p">,</span> <span class="n">TextureMixin</span>
+<span class="kn">from</span> <span class="nn">moviepy.video.io.VideoFileClip</span> <span class="kn">import</span> <span class="n">VideoFileClip</span>
+
+<span class="kn">import</span> <span class="nn">ctypes</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">from</span> <span class="nn">psychopy.clock</span> <span class="kn">import</span> <span class="n">Clock</span>
+<span class="kn">from</span> <span class="nn">psychopy.constants</span> <span class="kn">import</span> <span class="n">FINISHED</span><span class="p">,</span> <span class="n">NOT_STARTED</span><span class="p">,</span> <span class="n">PAUSED</span><span class="p">,</span> <span class="n">PLAYING</span><span class="p">,</span> <span class="n">STOPPED</span>
+
+<span class="kn">import</span> <span class="nn">pyglet.gl</span> <span class="k">as</span> <span class="nn">GL</span>
+
+
+<div class="viewcode-block" id="MovieStim3">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3">[docs]</a>
+<span class="k">class</span> <span class="nc">MovieStim3</span><span class="p">(</span><span class="n">BaseVisualStim</span><span class="p">,</span> <span class="n">ContainerMixin</span><span class="p">,</span> <span class="n">TextureMixin</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;A stimulus class for playing movies. This is a lazy-imported class,</span>
+<span class="sd">    therefore import using full path </span>
+<span class="sd">    `from psychopy.visual.movie3 import MovieStim3` when inheriting from it.</span>
+
+<span class="sd">    This class uses MoviePy and FFMPEG as a backend for loading and decoding</span>
+<span class="sd">    video data from files.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    filename : str</span>
+<span class="sd">        A string giving the relative or absolute path to the movie.</span>
+<span class="sd">    flipVert : True or *False*</span>
+<span class="sd">        If True then the movie will be top-bottom flipped</span>
+<span class="sd">    flipHoriz : True or *False*</span>
+<span class="sd">        If True then the movie will be right-left flipped</span>
+<span class="sd">    volume :</span>
+<span class="sd">        The nominal level is 100, and 0 is silence.</span>
+<span class="sd">    loop : bool, optional</span>
+<span class="sd">        Whether to start the movie over from the beginning if draw is called and</span>
+<span class="sd">        the movie is done.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    See Movie2Stim.py for demo.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">win</span><span class="p">,</span>
+                 <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                 <span class="n">units</span><span class="o">=</span><span class="s1">&#39;pix&#39;</span><span class="p">,</span>
+                 <span class="n">size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+                 <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+                 <span class="n">ori</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+                 <span class="n">flipVert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="n">flipHoriz</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span>
+                 <span class="n">colorSpace</span><span class="o">=</span><span class="s1">&#39;rgb&#39;</span><span class="p">,</span>
+                 <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                 <span class="n">volume</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                 <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+                 <span class="n">loop</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="n">autoLog</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                 <span class="n">depth</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+                 <span class="n">noAudio</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="n">vframe_callback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">fps</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">interpolate</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="c1"># what local vars are defined (these are the init params) for use</span>
+        <span class="c1"># by __repr__</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initParams</span> <span class="o">=</span> <span class="nb">dir</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initParams</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;self&#39;</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">MovieStim3</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="n">units</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                                         <span class="n">autoLog</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="n">retraceRate</span> <span class="o">=</span> <span class="n">win</span><span class="o">.</span><span class="n">_monitorFrameRate</span>
+        <span class="c1"># if retraceRate is None:</span>
+        <span class="c1">#     retraceRate = win.getActualFrameRate()</span>
+        <span class="k">if</span> <span class="n">retraceRate</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;FrameRate could not be supplied by psychopy; &quot;</span>
+                            <span class="s2">&quot;defaulting to 60.0&quot;</span><span class="p">)</span>
+            <span class="n">retraceRate</span> <span class="o">=</span> <span class="mf">60.0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_retraceInterval</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="n">retraceRate</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">pathToString</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loop</span> <span class="o">=</span> <span class="n">loop</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flipVert</span> <span class="o">=</span> <span class="n">flipVert</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flipHoriz</span> <span class="o">=</span> <span class="n">flipHoriz</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">pos</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">anchor</span> <span class="o">=</span> <span class="n">anchor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">depth</span> <span class="o">=</span> <span class="n">depth</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">opacity</span> <span class="o">=</span> <span class="n">opacity</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">interpolate</span> <span class="o">=</span> <span class="n">interpolate</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">noAudio</span> <span class="o">=</span> <span class="n">noAudio</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">useTexSubImage2D</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="k">if</span> <span class="n">noAudio</span><span class="p">:</span>  <span class="c1"># to avoid dependency problems in silent movies</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">sound</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">=</span> <span class="n">sound</span>
+
+        <span class="c1"># set autoLog (now that params have been initialised)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">autoLog</span> <span class="o">=</span> <span class="n">autoLog</span>
+        <span class="k">if</span> <span class="n">autoLog</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="s2">&quot;Created </span><span class="si">%s</span><span class="s2"> = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="p">)))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_videoClock</span> <span class="o">=</span> <span class="n">Clock</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loadMovie</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setVolume</span><span class="p">(</span><span class="n">volume</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nDroppedFrames</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="c1"># size</span>
+        <span class="k">if</span> <span class="n">size</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">w</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">h</span><span class="p">],</span>
+                                    <span class="nb">float</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">val2array</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ori</span> <span class="o">=</span> <span class="n">ori</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_updateVertices</span><span class="p">()</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">interpolate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Enable linear interpolation (`bool&#39;).</span>
+
+<span class="sd">        If `True` linear filtering will be applied to the video making the image</span>
+<span class="sd">        less pixelated if scaled.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_interpolate</span>
+
+    <span class="nd">@interpolate</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">interpolate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_interpolate</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_texFilterNeedsUpdate</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">duration</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Duration of the video clip in seconds (`float`). Only valid after</span>
+<span class="sd">        loading a clip, always returning `0.0` if not.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mf">0.0</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">duration</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">frameInterval</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Time in seconds each frame is to be presented on screen (`float`).</span>
+<span class="sd">        Value is `0.0` if no movie is loaded.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mf">0.0</span>
+
+        <span class="k">return</span> <span class="mf">1.</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">fps</span>
+
+<div class="viewcode-block" id="MovieStim3.reset">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.reset">[docs]</a>
+    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_texID</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">NOT_STARTED</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nDroppedFrames</span> <span class="o">=</span> <span class="mi">0</span></div>
+
+        
+<div class="viewcode-block" id="MovieStim3.setMovie">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setMovie">[docs]</a>
+    <span class="k">def</span> <span class="nf">setMovie</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;See `~MovieStim.loadMovie` (the functions are identical).</span>
+
+<span class="sd">        This form is provided for syntactic consistency with other visual</span>
+<span class="sd">        stimuli.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filename : str</span>
+<span class="sd">            The name of the file, including path if necessary.</span>
+<span class="sd">        log : bool</span>
+<span class="sd">            Log this event.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loadMovie</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="n">log</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.loadMovie">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.loadMovie">[docs]</a>
+    <span class="k">def</span> <span class="nf">loadMovie</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Load a movie from file.</span>
+
+<span class="sd">        After the file is loaded `MovieStim.duration` is updated with the movie</span>
+<span class="sd">        duration (in seconds).</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filename : str</span>
+<span class="sd">            The name of the file, including path if necessary.</span>
+<span class="sd">        log : bool</span>
+<span class="sd">            Log this event.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">pathToString</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>  <span class="c1"># set status and timestamps etc</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="c1"># Create Video Stream stuff</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span> <span class="o">=</span> <span class="n">VideoFileClip</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">audio</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">noAudio</span><span class="p">))</span>
+            <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">noAudio</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">audio</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">):</span>
+                <span class="n">sound</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span> <span class="o">=</span> <span class="n">sound</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">audio</span><span class="o">.</span><span class="n">to_soundarray</span><span class="p">(),</span>
+                        <span class="n">sampleRate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">audio</span><span class="o">.</span><span class="n">fps</span><span class="p">)</span>
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="c1"># JWE added this as a patch for a moviepy oddity where the</span>
+                    <span class="c1"># duration is inflated in the saved file causes the</span>
+                    <span class="c1"># audioclip to be the wrong length, so round down and it</span>
+                    <span class="c1"># should work</span>
+                    <span class="n">jwe_tmp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">subclip</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">duration</span><span class="p">))</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span> <span class="o">=</span> <span class="n">sound</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span>
+                        <span class="n">jwe_tmp</span><span class="o">.</span><span class="n">audio</span><span class="o">.</span><span class="n">to_soundarray</span><span class="p">(),</span>
+                        <span class="n">sampleRate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">audio</span><span class="o">.</span><span class="n">fps</span><span class="p">)</span>
+                    <span class="k">del</span><span class="p">(</span><span class="n">jwe_tmp</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># make sure we set to None (in case prev clip had audio)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="n">filename</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefs</span><span class="o">.</span><span class="n">paths</span><span class="p">[</span><span class="s1">&#39;resources&#39;</span><span class="p">]):</span>
+            <span class="c1"># If not found, and we aren&#39;t already looking in the Resources folder, try again in the Resources folder</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">loadMovie</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">prefs</span><span class="o">.</span><span class="n">paths</span><span class="p">[</span><span class="s1">&#39;resources&#39;</span><span class="p">])</span> <span class="o">/</span> <span class="n">filename</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Raise error if *still* not found</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s2">&quot;Movie file &#39;</span><span class="si">%s</span><span class="s2">&#39; was not found&quot;</span> <span class="o">%</span> <span class="n">filename</span><span class="p">)</span>
+        <span class="c1"># mov has attributes:</span>
+            <span class="c1"># size, duration, fps</span>
+        <span class="c1"># mov.audio has attributes</span>
+            <span class="c1"># duration, fps (aka sampleRate), to_soundarray()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_frameInterval</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">fps</span>
+        <span class="c1"># self.duration = self._mov.duration</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_updateFrameTexture</span><span class="p">()</span>
+        <span class="n">logAttrib</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="s1">&#39;movie&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.play">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.play">[docs]</a>
+    <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Continue a paused movie from current position.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span>
+        <span class="k">if</span> <span class="n">status</span> <span class="o">!=</span> <span class="n">PLAYING</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">PLAYING</span>  <span class="c1"># moved this to get better audio behavior - JK</span>
+            <span class="c1"># Added extra check to prevent audio doubling - JK</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span><span class="o">.</span><span class="n">status</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">PLAYING</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">status</span> <span class="o">==</span> <span class="n">PAUSED</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">getCurrentFrameTime</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># Check for valid timestamp, correct if needed -JK</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_audioSeek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_audioSeek</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getCurrentFrameTime</span><span class="p">())</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_videoClock</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">getCurrentFrameTime</span><span class="p">())</span>
+            <span class="k">if</span> <span class="n">log</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">autoLog</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">win</span><span class="o">.</span><span class="n">logOnFlip</span><span class="p">(</span><span class="s2">&quot;Set </span><span class="si">%s</span><span class="s2"> playing&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">),</span>
+                                   <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">EXP</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_updateFrameTexture</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.pause">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.pause">[docs]</a>
+    <span class="k">def</span> <span class="nf">pause</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Pause the current point in the movie (sound will stop, current frame</span>
+<span class="sd">        will not advance).  If play() is called again both will restart.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">PLAYING</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">PAUSED</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">prefs</span><span class="o">.</span><span class="n">hardware</span><span class="p">[</span><span class="s1">&#39;audioLib&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;sounddevice&#39;</span><span class="p">,</span> <span class="s1">&#39;PTB&#39;</span><span class="p">]:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span><span class="o">.</span><span class="n">pause</span><span class="p">()</span>  <span class="c1"># sounddevice and PTB have a &quot;pause&quot; function -JK</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">log</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">autoLog</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">win</span><span class="o">.</span><span class="n">logOnFlip</span><span class="p">(</span><span class="s2">&quot;Set </span><span class="si">%s</span><span class="s2"> paused&quot;</span> <span class="o">%</span>
+                                   <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">),</span> <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">EXP</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">log</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">autoLog</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">win</span><span class="o">.</span><span class="n">logOnFlip</span><span class="p">(</span><span class="s2">&quot;Failed Set </span><span class="si">%s</span><span class="s2"> paused&quot;</span> <span class="o">%</span>
+                               <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">),</span> <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">EXP</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.stop">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.stop">[docs]</a>
+    <span class="k">def</span> <span class="nf">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Stop the current point in the movie (sound will stop, current frame</span>
+<span class="sd">        will not advance). Once stopped the movie cannot be restarted -</span>
+<span class="sd">        it must be loaded again. Use pause() if you may need to restart</span>
+<span class="sd">        the movie.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="n">STOPPED</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_unload</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">STOPPED</span>  <span class="c1"># set status to STOPPED after _unload</span>
+            <span class="k">if</span> <span class="n">log</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">autoLog</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">win</span><span class="o">.</span><span class="n">logOnFlip</span><span class="p">(</span><span class="s2">&quot;Set </span><span class="si">%s</span><span class="s2"> stopped&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">),</span>
+                                   <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">EXP</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.setVolume">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setVolume">[docs]</a>
+    <span class="k">def</span> <span class="nf">setVolume</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume</span><span class="p">):</span>
+        <span class="k">pass</span>  <span class="c1"># to do</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.setFlipHoriz">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setFlipHoriz">[docs]</a>
+    <span class="k">def</span> <span class="nf">setFlipHoriz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">newVal</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;If set to True then the movie will be flipped horizontally</span>
+<span class="sd">        (left-to-right). Note that this is relative to the original,</span>
+<span class="sd">        not relative to the current state.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flipHoriz</span> <span class="o">=</span> <span class="n">newVal</span>
+        <span class="n">logAttrib</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="s1">&#39;flipHoriz&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_needVertexUpdate</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.setFlipVert">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setFlipVert">[docs]</a>
+    <span class="k">def</span> <span class="nf">setFlipVert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">newVal</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;If set to True then the movie will be flipped vertically</span>
+<span class="sd">        (top-to-bottom). Note that this is relative to the original,</span>
+<span class="sd">        not relative to the current state.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flipVert</span> <span class="o">=</span> <span class="n">newVal</span>
+        <span class="n">logAttrib</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="s1">&#39;flipVert&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_needVertexUpdate</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.getFPS">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getFPS">[docs]</a>
+    <span class="k">def</span> <span class="nf">getFPS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the movie frames per second.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        float</span>
+<span class="sd">            Frames per second.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">fps</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.getCurrentFrameTime">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.getCurrentFrameTime">[docs]</a>
+    <span class="k">def</span> <span class="nf">getCurrentFrameTime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the time that the movie file specified the current</span>
+<span class="sd">        video frame as having.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">frameInterval</span></div>
+
+
+    <span class="k">def</span> <span class="nf">_updateFrameTexture</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Update texture pixel store to contain the present frame. Decoded</span>
+<span class="sd">        frame image samples are streamed to the texture buffer.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># movie has no current position (or invalid position -JK),</span>
+            <span class="c1"># need to reset the clock to zero in order to have the</span>
+            <span class="c1"># timing logic work otherwise the video stream would skip</span>
+            <span class="c1"># frames until the time since creating the movie object has passed</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_videoClock</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+        <span class="c1"># only advance if next frame (half of next retrace rate)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_onEos</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">&gt;</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_videoClock</span><span class="o">.</span><span class="n">getTime</span><span class="p">()</span> <span class="o">-</span>
+                                   <span class="bp">self</span><span class="o">.</span><span class="n">_retraceInterval</span><span class="o">/</span><span class="mf">2.0</span><span class="p">):</span>
+                <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_videoClock</span><span class="o">.</span><span class="n">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_frameInterval</span><span class="o">*</span><span class="mi">2</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">nDroppedFrames</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">nDroppedFrames</span> <span class="o">&lt;=</span> <span class="n">reportNDroppedFrames</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">: Video catchup needed, advancing self._nextFrameT from&quot;</span>
+                                <span class="s2">&quot; </span><span class="si">{}</span><span class="s2"> to </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_videoClock</span><span class="o">.</span><span class="n">getTime</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span><span class="p">,</span>
+                                                   <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">_frameInterval</span><span class="p">))</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">nDroppedFrames</span> <span class="o">==</span> <span class="n">reportNDroppedFrames</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Max reportNDroppedFrames reached, will not log any more dropped frames&quot;</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_frameInterval</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">get_frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">autoLog</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Frame </span><span class="si">{}</span><span class="s2"> not found, moving one frame and trying again&quot;</span>
+                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span><span class="p">),</span> <span class="n">obj</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_frameInterval</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_updateFrameTexture</span><span class="p">()</span>
+        <span class="n">useSubTex</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">useTexSubImage2D</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_texID</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_texID</span> <span class="o">=</span> <span class="n">GL</span><span class="o">.</span><span class="n">GLuint</span><span class="p">()</span>
+            <span class="n">GL</span><span class="o">.</span><span class="n">glGenTextures</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">byref</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_texID</span><span class="p">))</span>
+            <span class="n">useSubTex</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="n">GL</span><span class="o">.</span><span class="n">glActiveTexture</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE0</span><span class="p">)</span>
+        <span class="c1"># bind that name to the target</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glBindTexture</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_texID</span><span class="p">)</span>
+        <span class="c1"># bind the texture in openGL</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glEnable</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">)</span>
+        <span class="c1"># makes the texture map wrap (this is actually default anyway)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glTexParameteri</span><span class="p">(</span>
+            <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_WRAP_S</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_CLAMP</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glTexParameteri</span><span class="p">(</span>
+            <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_WRAP_T</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_CLAMP</span><span class="p">)</span>
+        <span class="c1"># data from PIL/numpy is packed, but default for GL is 4 bytes</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glPixelStorei</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_UNPACK_ALIGNMENT</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># important if using bits++ because GL_LINEAR</span>
+        <span class="c1"># sometimes extrapolates to pixel vals outside range</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">interpolate</span><span class="p">:</span>
+            <span class="n">GL</span><span class="o">.</span><span class="n">glTexParameteri</span><span class="p">(</span>
+                <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_MAG_FILTER</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_LINEAR</span><span class="p">)</span>
+            <span class="n">GL</span><span class="o">.</span><span class="n">glTexParameteri</span><span class="p">(</span>
+                <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_MIN_FILTER</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_LINEAR</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">useSubTex</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+                <span class="n">GL</span><span class="o">.</span><span class="n">glTexImage2D</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_RGB8</span><span class="p">,</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span>
+                                <span class="n">GL</span><span class="o">.</span><span class="n">GL_RGB</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_UNSIGNED_BYTE</span><span class="p">,</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">ctypes</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">GL</span><span class="o">.</span><span class="n">glTexSubImage2D</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+                                   <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                                   <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                                   <span class="n">GL</span><span class="o">.</span><span class="n">GL_RGB</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_UNSIGNED_BYTE</span><span class="p">,</span>
+                                   <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">ctypes</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">GL</span><span class="o">.</span><span class="n">glTexParameteri</span><span class="p">(</span>
+                <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_MAG_FILTER</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_NEAREST</span><span class="p">)</span>
+            <span class="n">GL</span><span class="o">.</span><span class="n">glTexParameteri</span><span class="p">(</span>
+                <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_MIN_FILTER</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_NEAREST</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">useSubTex</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+                <span class="n">GL</span><span class="o">.</span><span class="n">glTexImage2D</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_RGB8</span><span class="p">,</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span>
+                                <span class="n">GL</span><span class="o">.</span><span class="n">GL_BGR</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_UNSIGNED_BYTE</span><span class="p">,</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">ctypes</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">GL</span><span class="o">.</span><span class="n">glTexSubImage2D</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+                                   <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                                   <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                                   <span class="n">GL</span><span class="o">.</span><span class="n">GL_BGR</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_UNSIGNED_BYTE</span><span class="p">,</span>
+                                   <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span><span class="o">.</span><span class="n">ctypes</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glTexEnvi</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_ENV</span><span class="p">,</span> <span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_ENV_MODE</span><span class="p">,</span>
+                     <span class="n">GL</span><span class="o">.</span><span class="n">GL_MODULATE</span><span class="p">)</span>  <span class="c1"># ?? do we need this - think not!</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">PLAYING</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_frameInterval</span>
+
+<div class="viewcode-block" id="MovieStim3.draw">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.draw">[docs]</a>
+    <span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">win</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Draw the current frame to a particular visual.Window (or to the</span>
+<span class="sd">        default win for this object if not specified). The current position in</span>
+<span class="sd">        the movie will be determined automatically.</span>
+
+<span class="sd">        This method should be called on every frame that the movie is meant to</span>
+<span class="sd">        appear.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        win : :class:`~psychopy.visual.Window` or None</span>
+<span class="sd">            Window the video is being drawn to. If `None`, the window specified</span>
+<span class="sd">            by property `win` will be used. Default is `None`.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">NOT_STARTED</span> <span class="ow">or</span>
+                <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">FINISHED</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">loop</span><span class="p">)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">FINISHED</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">loop</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="n">win</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">win</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">win</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_selectWindow</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_updateFrameTexture</span><span class="p">()</span>  <span class="c1"># will check if it&#39;s needed</span>
+
+        <span class="c1"># scale the drawing frame and get to centre of field</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glPushMatrix</span><span class="p">()</span>  <span class="c1"># push before drawing, pop after</span>
+        <span class="c1"># push the data for client attributes</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glPushClientAttrib</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_CLIENT_ALL_ATTRIB_BITS</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">win</span><span class="o">.</span><span class="n">setScale</span><span class="p">(</span><span class="s1">&#39;pix&#39;</span><span class="p">)</span>
+        <span class="c1"># move to centre of stimulus and rotate</span>
+        <span class="n">vertsPix</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">verticesPix</span>
+
+        <span class="c1"># bind textures</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glActiveTexture</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE1</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glBindTexture</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glEnable</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glActiveTexture</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE0</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glBindTexture</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_texID</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glEnable</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">)</span>
+
+        <span class="c1"># sets opacity (1,1,1 = RGB placeholder)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glColor4f</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">opacity</span><span class="p">)</span>
+
+        <span class="n">array</span> <span class="o">=</span> <span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GLfloat</span> <span class="o">*</span> <span class="mi">32</span><span class="p">)(</span>
+            <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1"># texture coords</span>
+            <span class="n">vertsPix</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">vertsPix</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="mf">0.</span><span class="p">,</span>  <span class="c1"># vertex</span>
+            <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">vertsPix</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">vertsPix</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="mf">0.</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">vertsPix</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">vertsPix</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="mf">0.</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">vertsPix</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">vertsPix</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="mf">0.</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="c1"># 2D texture array, 3D vertex array</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glInterleavedArrays</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_T2F_V3F</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">array</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glDrawArrays</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_QUADS</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glPopClientAttrib</span><span class="p">()</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glPopMatrix</span><span class="p">()</span>
+        <span class="c1"># unbind the textures</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glActiveTexture</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE0</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glBindTexture</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">GL</span><span class="o">.</span><span class="n">glEnable</span><span class="p">(</span><span class="n">GL</span><span class="o">.</span><span class="n">GL_TEXTURE_2D</span><span class="p">)</span>  <span class="c1"># implicitly disables 1D</span></div>
+
+
+<div class="viewcode-block" id="MovieStim3.seek">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.seek">[docs]</a>
+    <span class="k">def</span> <span class="nf">seek</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Go to a specific point in time for both the audio and video streams</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># video is easy: set both times to zero and update the frame texture</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_nextFrameT</span> <span class="o">=</span> <span class="n">t</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_videoClock</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_audioSeek</span><span class="p">(</span><span class="n">t</span><span class="p">)</span></div>
+
+
+    <span class="k">def</span> <span class="nf">_audioSeek</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+        <span class="n">sound</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>  <span class="c1"># do nothing</span>
+        <span class="c1"># check if sounddevice or PTB is being used. If so we can use seek. If not we</span>
+        <span class="c1"># have to reload the audio stream and begin at the new loc</span>
+        <span class="k">if</span> <span class="n">prefs</span><span class="o">.</span><span class="n">hardware</span><span class="p">[</span><span class="s1">&#39;audioLib&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;sounddevice&#39;</span><span class="p">,</span> <span class="s1">&#39;PTB&#39;</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+            <span class="n">sndArray</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">audio</span><span class="o">.</span><span class="n">to_soundarray</span><span class="p">()</span>
+            <span class="n">startIndex</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">t</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">audio</span><span class="o">.</span><span class="n">fps</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span> <span class="o">=</span> <span class="n">sound</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span>
+                <span class="n">sndArray</span><span class="p">[</span><span class="n">startIndex</span><span class="p">:,</span> <span class="p">:],</span> <span class="n">sampleRate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">audio</span><span class="o">.</span><span class="n">fps</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="n">PAUSED</span><span class="p">:</span>  <span class="c1"># Allows for seeking while paused - JK</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">_getAudioStreamTime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_audio_stream_clock</span><span class="o">.</span><span class="n">getTime</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">_unload</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># remove textures from graphics card to prevent crash</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">clearTextures</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mov</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_numpyFrame</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_audioStream</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">FINISHED</span>
+
+    <span class="k">def</span> <span class="nf">_onEos</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">loop</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">FINISHED</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">autoLog</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">win</span><span class="o">.</span><span class="n">logOnFlip</span><span class="p">(</span><span class="s2">&quot;Set </span><span class="si">%s</span><span class="s2"> finished&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+                               <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">EXP</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_unload</span><span class="p">()</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">ImportError</span><span class="p">,</span> <span class="ne">ModuleNotFoundError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+            <span class="k">pass</span>  <span class="c1"># has probably been garbage-collected already</span>
+
+<div class="viewcode-block" id="MovieStim3.setAutoDraw">
+<a class="viewcode-back" href="../../../../coder/MovieStim3/#psychopy_legacy.visual.movie3.MovieStim3.setAutoDraw">[docs]</a>
+    <span class="k">def</span> <span class="nf">setAutoDraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Add or remove a stimulus from the list of stimuli that will be</span>
+<span class="sd">        automatically drawn on each flip.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        val : bool</span>
+<span class="sd">            True to add the stimulus to the draw list, False to remove it.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">val</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">log</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># set to play in case stopped</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pause</span><span class="p">(</span><span class="n">log</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="c1"># add to drawing list and update status</span>
+        <span class="n">setAttribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;autoDraw&#39;</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">log</span><span class="p">)</span></div>
+</div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+
+      <br/><a href="#" class="pull-right">Back to top</a>
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <span class="pull-right">
+      
+        
+      <br/>
+
+          &copy; 2002-2018 <a href="https://www.peirce.org.uk/">Jonathan Peirce</a><br/>
+          &copy; 2019 <a href="https://opensciencetools.org/">Open Science Tools Ltd.</a><br/><br/>
+        PsychoPy<sup>®</sup> and Pavlovia<sup>®</sup> are registered trademarks of Open Science Tools Ltd.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br/><br/>
+    </span>
+
+    <a href="http://www.nottingham.ac.uk/"><img src="../../../../_static/Nottingham Supported.png", alt="Uni of Nottingham" width=250></a>
+  </div>
+
+</footer>
+  </body>
+</html>
