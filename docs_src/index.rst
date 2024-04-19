@@ -2,7 +2,7 @@
 Welcome to psychopy-plugin-template's documentation!
 =======================================================
 
-The `psychopy-template` plugin is designed to show you how to make a plugin.
+The `psychopy-legacy` plugin contains legacy stimuli and Components for PsychoPy.
 
 .. toctree::
    :maxdepth: 1

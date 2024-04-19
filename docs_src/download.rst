@@ -1,10 +1,10 @@
 
 =======================================================
-How to install psychopy-plugin-template
+How to install psychopy-legacy
 =======================================================
 
-You can download `psychopy-plugin-template` via pip as follows:
+You can download `psychopy-legacy` via pip as follows:
 
 ```
-pip install git+https://github/psychopy/psychopy-plugin-template@main
+pip install git+https://github/psychopy/psychopy-legacy@main
 ```

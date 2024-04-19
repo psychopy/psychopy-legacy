@@ -29,6 +29,15 @@ tests = [
   "psychopy @ git+https://github.com/psychopy/psychopy@release",
   "pytest",
 ]
+# dependencies for using different movie stims
+movie2 = [
+  "openCV",
+  "python-vlc",
+]
+movie3 = [
+  "moviepy",
+]
+
 
 [project.entry-points."psychopy.experiment.components"]
 RatingScaleComponent = "psychopy_legacy.components.ratingScale:RatingScaleComponent"
