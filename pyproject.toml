@@ -55,6 +55,9 @@ MovieStim3 = "psychopy_legacy.visual.movie3:MovieStim3"
 PatchStim = "psychopy_legacy.visual.patch:PatchStim"
 RatingScale = "psychopy_legacy.visual.ratingscale:RatingScale"
 
+[project.entry-points."psychopy"]
+voicekey = "psychopy_legacy.voicekey"
+
 [tool.setuptools.package-data]
 # any resources you want including in the package, add their file extensions here (e.g. "*.wav" if you want audio files)
 "*" = ["*.png"] 
