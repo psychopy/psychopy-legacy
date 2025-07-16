@@ -2,7 +2,7 @@
 # the name of your plugin (required)
 name = "psychopy-legacy"
 # the current version of the plugin (required)
-version = "1.0.0" 
+version = "1.1.0" 
 # a brief description of what your plugin does
 description = "Legacy stimuli and Components for PsychoPy"
 # contact information for yourself and anyone else who worked on the plugin 
