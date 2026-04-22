@@ -7,7 +7,7 @@ from pathlib import Path
 class OpenCVMovieComponent(MovieComponent):
     iconFile = Path(__file__).parent / 'OpenCVMovieComponent.png'
     iconSVG = Path(__file__).parent / 'OpenCVMovieComponent.svg'
-    tooltip = _translate('Movie: play movie files')
+    tooltip = _translate('Play movies via the OpenCV movie backend')
 
     def writeInitCode(self, buff):
         # get init vals

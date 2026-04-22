@@ -1,8 +1,13 @@
 from psychopy.experiment.components.movie import MovieComponent
 from psychopy.experiment.components import getInitVals
-
+from psychopy.localization import _translate
+from pathlib import Path
 
 class MoviePyMovieComponent(MovieComponent):
+    iconFile = Path(__file__).parent / 'MoviePyMovieComponent.png'
+    iconSVG = Path(__file__).parent / 'MoviePyMovieComponent.svg'
+    tooltip = _translate('Play movies via the MoviePy backend')
+
     def writeInitCode(self, buff):
         # get init vals
         inits = getInitVals()
