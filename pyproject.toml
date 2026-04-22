@@ -48,6 +48,8 @@ tests = [
 [project.entry-points."psychopy.experiment.components"]
 RatingScaleComponent = "psychopy_legacy.components.ratingScale:RatingScaleComponent"
 PatchComponent = "psychopy_legacy.components.patch:PatchComponent"
+OpenCVMovieComponent = "psychopy_legacy.components.opencvMovie:OpenCVMovieComponent"
+MoviePyMovieComponent = "psychopy_legacy.components.moviepyMovie:MoviePyMovieComponent"
 
 [project.entry-points."psychopy.visual"]
 MovieStim2 = "psychopy_legacy.visual.movie2:MovieStim2"
